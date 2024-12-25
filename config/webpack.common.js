@@ -26,6 +26,12 @@ const common = {
     assets: true,
     excludeAssets: [IMAGE_TYPES],
   },
+  externals: {
+    "child_process": "require('child_process')",
+    "fs": "require('fs')",
+    "path": "require('path')",
+    /* html2canvas: "require('html2canvas')", */
+  },
   module: {
     rules: [
       // Help webpack in understanding CSS files imported in .js files
